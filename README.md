@@ -1,2 +1,2 @@
 # LooptimeFinder
-A random tool I made that finds the looptime and totalframe for a mod based on the bpm.
+A random Incredibox modding tool I made that finds the looptime and totalframe based on the BPM.
