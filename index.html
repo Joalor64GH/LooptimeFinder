@@ -1,4 +1,9 @@
 <html>
+
+<head>
+    <!-- nice icon by rizsim studios-->
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+</head>
 <style>
     body {
         margin: 0;
@@ -66,7 +71,7 @@
 
             if (!isNaN(bpm) && bpm > 0) {
                 let looptime = Math.round((60000 / bpm) * bpl);
-                let totalframe = Math.round((looptime * 0.024)) * 2;
+                let totalframe = (Math.round((looptime * 0.024)) * 2) - 2;
 
                 document.getElementById("results-text").innerHTML =
                     `Results:<br>Looptime: ${looptime} ms<br>Totalframe: ${totalframe}`;
