@@ -6,11 +6,11 @@
 </head>
 <style>
     body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background: #00ff77;
-    }
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #00cc44, #008800);
+}
 
     .container {
         max-width: 400px;
@@ -40,7 +40,7 @@
     }
 
     .button {
-        background-color: #008800;
+        background-color: #00aa00;
         color: white;
         border: none;
         border-radius: 5px;
@@ -70,7 +70,7 @@
             }
 
             if (!isNaN(bpm) && bpm > 0) {
-                let looptime = Math.round((60000 / bpm) * bpl);
+                let looptime = Math.trunc((60000 / bpm) * bpl);
                 let totalframe = Math.floor((looptime * 0.024)) * 2;
 
                 document.getElementById("results-text").innerHTML =
