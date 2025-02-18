@@ -6,11 +6,19 @@
 </head>
 <style>
     body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #00cc44, #008800);
-}
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #00cc44, #008800);
+    }
+
+    .hr {
+        border: none;
+        width: 100%;
+        height: 1px;
+        margin: 25px 0;
+        background-color: #ccc
+    }
 
     .container {
         max-width: 400px;
@@ -55,6 +63,9 @@
     <div class="container">
         <h1 align="center" class="title">Incredibox Looptime + Totalframe Finder</h1>
         <h2 align="center" class="sub-title">Created by Joalor64</h2>
+        <hr>
+        <p align="center">Note: You might need less or more frames so the totalframe amount is actually correct.</p>
+        <hr>
         <input class="input" type="text" placeholder="BPM" id="bpminput">
         <input class="input" type="text" placeholder="Beats per loop (Optional)" id="beatsloopinput">
         <button class="button" id="submit-button">Submit</button>
